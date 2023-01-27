@@ -3,9 +3,9 @@ package ru.netology;
 public class Main {
     public static void main(String[] args) {
         SQRService service = new SQRService();
-        int x = 10;
-        int y = 99;
-        int count = service.calculate(x, y);
+        int begin = 10;
+        int end = 99;
+        int count = service.calculate(begin, end);
         System.out.println(count);
     }
 }

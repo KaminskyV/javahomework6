@@ -7,9 +7,9 @@ import ru.netology.SQRService;
 public class SQRServiceTest {
     @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/sqrt.csv")
-    void searchforsquarenumbers(int x, int y, int expected) {
+    void searchforsquarenumbers(int begin, int end, int expected) {
         SQRService service = new SQRService();
-        int actual = service.calculate(x, y);
+        int actual = service.calculate(begin, end);
         Assertions.assertEquals(expected, actual);
     }
 }
